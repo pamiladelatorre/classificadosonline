@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+   
+    <title>Cadastro hospede</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-topo">
+            <a href="index.html"><img src="imagens/logo.png" alt="Meu destino é logo ali"></a>
+            <div class= "cabecalho-botoes">
+                <a href="#">Login</a>
+            </div>
+        </div>
+        <nav class="cabecalho-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="produto.html">Hospedagens</a></li>    
+                <li><a href="anuncio.html">Anuncie Aqui</a></li>
+                <li><a href="portifolio.html">Portifólio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="formulario">
+        <div class="formulario-conteudo">
+            <h1>Cadastre-se</h1>
+            <form id="form" action="formulario.ok" method="post">
+                <label class="formulario-label" for="username">Nome:</label>
+                <input type="text" id="username" class="formulario-input-text" placeholder="Digite aqui..."
+                    autofocus="true" required="required" size="40" maxlength="30" />
+                <label class="formulario-label" for="useremail">E-mail:</label>
+                <input type="email" id="useremail" class="formulario-input-text" placeholder="nome@exemplo.com"   
+                    autofocus="true" required="required" size="40" maxlength="35" />
+                <label class="formulario-label" for="tfone">Fone:</label>
+                <input type="tel" name="tfone" class="formulario-input-text" placeholder="(xx) xxxxx-xxxx"
+                    autofocus="true" required="required" size="30" pattern="\(\d{2}\)\s\d{5}-\d{4}" />
+                <label class="formulario-label">Selecione sua preferência:</label>
+                <div class="formulario-check">
+                    <input class="formulario-check-input" id="hotel" type="radio" name="preferencia" value="1"/> 
+                    <label class="formulario-check-label" for="hotel">Hotel</label>
+                </div>
+                <div class="formulario-check">
+                    <input class="formulario-check-input" id="apartamento" type="radio" name="preferencia" value="2"/> 
+                    <label class="formulario-check-label" for="apartamento">Apartamento</label>
+                </div>
+                <div class="formulario-check">
+                    <input class="formulario-check-input" id="casa" type="radio" name="preferencia" value="3"/> 
+                    <label class="formulario-check-label" for="casa">Casa</label>
+                </div>
+                <div class="formulario-acoes">
+                    <a class="botao-salvar" href="index.html" onclick="alert('Cadastro Realizado!')">Finalizar Cadastro</a>
+                </div>
+                </select>
+                <br>
+             </form>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Copyright; 2023 - by Pamela Delatorre</p>
+        <p><a href="portifolio.html">Portifólio</a></p>
+    </footer>
+</body>
+</html>
